@@ -1,0 +1,66 @@
+{
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "debug.toolBarLocation": "commandCenter",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.enable": true,
+  "eslint.format.enable": false,
+  "eslint.useFlatConfig": true,
+  "eslint.probe": ["javascript", "typescript", "typescriptreact"],
+  "eslint.run": "onType",
+  "eslint.validate": ["javascript", "typescript", "typescriptreact"],
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true
+  },
+  "search.exclude": {
+    "**/.vscode/**": true,
+    "**/assets/**": true,
+    "**/package-lock.json": true,
+    ".eslintignore": true
+  },
+  "terminal.integrated.automationProfile.windows": {
+    "args": ["-l"],
+    "color": "terminal.ansiMagenta",
+    "env": {
+      "PATH": "${workspaceFolder}\\node_modules\\.bin;${env:PATH}"
+    },
+    "icon": "terminal-bash",
+    "overrideName": true,
+    "path": "${env:PROGRAMFILES}\\Git\\bin\\bash.exe"
+  },
+  "terminal.integrated.defaultProfile.windows": "node-bash",
+  "terminal.integrated.profiles.windows": {
+    "node-bash": {
+      "args": ["-l"],
+      "color": "terminal.ansiCyan",
+      "env": {
+        "PATH": "${workspaceFolder}\\node_modules\\.bin;${env:PATH}"
+      },
+      "icon": "terminal-bash",
+      "overrideName": true,
+      "path": "${env:PROGRAMFILES}\\Git\\bin\\bash.exe"
+    }
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "helium-icon-theme"
+}
