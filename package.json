@@ -3,16 +3,31 @@
   "name": "desktop-toolbox",
   "description": "A utility toolbox for everyday desktop activities.",
   "version": "0.0.1",
-  "main": ".webpack/main",
+  "main": ".webpack/main/index.js",
   "scripts": {
     "start": "electron-forge start",
+    "check": "tsc --noEmit",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/material": "^7.1.0",
+    "@mui/styled-engine-sc": "^7.1.0",
+    "@mui/system": "^7.1.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.6.1",
+    "sharp": "^0.34.2",
+    "styled-components": "^6.1.18",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.8.1",
@@ -25,7 +40,9 @@
     "@electron-forge/plugin-webpack": "^7.8.1",
     "@electron/fuses": "^1.8.0",
     "@eslint/js": "^10.0.0",
-    "@vercel/webpack-asset-relocator-loader": "^1.7.0",
+    "@types/electron-squirrel-startup": "^1.0.2",
+    "@types/react-dom": "^19.1.5",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
     "css-loader": "^7.1.2",
     "electron": "36.3.1",
     "eslint": "^9.27.0",
@@ -37,6 +54,7 @@
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.33.0"
   }

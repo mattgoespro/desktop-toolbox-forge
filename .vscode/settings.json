@@ -33,9 +33,9 @@
   },
   "search.exclude": {
     "**/.vscode/**": true,
-    "**/assets/**": true,
-    "**/package-lock.json": true,
-    ".eslintignore": true
+    "**/.webpack/**": true,
+    "**/*.{ts,js,mjs}": true,
+    "package-lock.json": true
   },
   "terminal.integrated.automationProfile.windows": {
     "args": ["-l"],
