@@ -5,7 +5,26 @@
       "label": "start",
       "type": "npm",
       "script": "start",
-      "problemMatcher": "$ts-checker-webpack-watch"
+      "problemMatcher": [
+        "$ts-checker-webpack-watch",
+        {
+          "owner": "typescript",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "severity": "info",
+          "source": "electron-forge",
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "^✔ Checking your system$",
+            "endsPattern": "^✔ Running preStart hook$"
+          },
+          "pattern": {
+            "regexp": "^✔ (.*)$",
+            "file": 1,
+            "message": 0
+          }
+        }
+      ],
+      "isBackground": true
     }
   ]
 }

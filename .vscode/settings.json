@@ -41,7 +41,8 @@
     "args": ["-l"],
     "color": "terminal.ansiMagenta",
     "env": {
-      "PATH": "${workspaceFolder}\\node_modules\\.bin;${env:PATH}"
+      "PATH": "${workspaceFolder}\\node_modules\\.bin;${env:PATH}",
+      "NODE_ENV": "development"
     },
     "icon": "terminal-bash",
     "overrideName": true,

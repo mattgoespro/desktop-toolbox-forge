@@ -9,7 +9,7 @@ export type RouterLinkBaseProps = Pick<ReactRouterLinkProps, "to" | "relative" |
 };
 
 export type RouterLinkButtonProps = Omit<RouterLinkBaseProps, "type"> & {
-  type: "button";
+  type: "link" | "button";
   children?: JSX.Element | JSX.Element[];
   title?: string;
   onClick?: () => void;
@@ -29,7 +29,7 @@ export function RouterLink(props: RouterLinkProps) {
         </Button>
       );
     case "link":
-      return <Link component={ReactRouterLink} {...rest} />;
+      return <Link component={ReactRouterLink} {...rest} to={props.to} />;
     default:
       throw new Error(`Unknown RouterLink type: ${type}`);
   }
