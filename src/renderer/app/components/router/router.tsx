@@ -1,4 +1,4 @@
-import { Navigate, RouteObject, createHashRouter } from "react-router-dom";
+import { Navigate, RouteObject, createHashRouter } from "react-router";
 import { ImageToIconConverter } from "../tools/image-to-icon-converter/image-to-icon-converter";
 import { Dashboard } from "../dashboard/dashboard";
 

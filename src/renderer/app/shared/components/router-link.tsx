@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import { Link as ReactRouterLink, LinkProps as ReactRouterLinkProps } from "react-router-dom";
+import { Link as ReactRouterLink, LinkProps as ReactRouterLinkProps } from "react-router";
 import { JSX } from "react";
 
 export type RouterLinkBaseProps = Pick<ReactRouterLinkProps, "to" | "relative" | "children"> & {

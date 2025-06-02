@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom";
-import { FlexBox } from "src/renderer/shared/components/flex-box";
+import { Outlet } from "react-router";
+import { FlexBox } from "src/renderer/app/shared/components/flex-box";
 import Typography from "@mui/material/Typography";
 import { ToolTile } from "./tool-tile/tool-tile";
 
