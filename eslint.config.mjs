@@ -5,10 +5,12 @@ import pluginReact from "eslint-plugin-react";
 
 export default tseslint.config([
   tseslint.configs.recommended,
+  {
+    ignores: ["**/node_modules/**", "**/.webpack/**", "**/.react-router/**"]
+  },
   pluginReact.configs.flat.recommended,
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-    ignores: ["**/node_modules/**", "**/.webpack/**", "**/dist/**", "**/.vscode/**"],
     plugins: {
       js
     },

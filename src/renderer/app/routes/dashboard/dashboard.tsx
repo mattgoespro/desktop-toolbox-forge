@@ -2,6 +2,11 @@ import { Outlet } from "react-router";
 import { FlexBox } from "src/renderer/app/shared/components/flex-box";
 import Typography from "@mui/material/Typography";
 import { ToolTile } from "./tool-tile/tool-tile";
+import type { Route } from "./+types/dashboard";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "Dashboard" }, { name: "description", content: "Welcome to Desktop Toolbox" }];
+}
 
 export function Dashboard() {
   return (

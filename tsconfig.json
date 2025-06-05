@@ -1,21 +1,22 @@
 {
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/renderer/.react-router/types/**/*"],
   "compilerOptions": {
-    "target": "ES6",
-    "allowJs": true,
-    "module": "commonjs",
-    "skipLibCheck": true,
+    "module": "nodenext", // required for nodenext moduleResolution
+    "target": "es2020",
+    "lib": ["es2020", "dom"],
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
-    "noImplicitAny": true,
-    "sourceMap": true,
     "baseUrl": ".",
-    "outDir": ".webpack",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": ".webpack",
+    "rootDirs": ["src/main", "src/renderer/app", "src/renderer/.react-router/types/app"],
     "paths": {
       "@main/*": ["src/main/*"],
-      "@shared/*": ["src/shared/*"]
-    }
+      "@shared/*": ["src/shared/*"],
+      "~/*": ["./*"]
+    },
+    "sourceMap": true
   }
 }
